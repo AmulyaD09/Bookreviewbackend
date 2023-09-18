@@ -47,7 +47,7 @@ public_users.get('/review/:isbn', function (req, res) {
   return res.json(reviews);
 });
 
-// Task 10: Get the list of books available using async-await with Axios
+// Get the list of books available using async-await with Axios
 public_users.get('/external-books', async function (req, res) {
   try {
     // GET request to an external API (localhost in this case) to fetch books
@@ -60,7 +60,7 @@ public_users.get('/external-books', async function (req, res) {
   }
 });
 
-// Task 11: Get book details based on ISBN using async-await with Axios
+// Get book details based on ISBN using async-await with Axios
 public_users.get('/external-books/isbn/:isbn', async function (req, res) {
   const isbn = req.params.isbn;
   try {
@@ -74,7 +74,7 @@ public_users.get('/external-books/isbn/:isbn', async function (req, res) {
   }
 });
 
-// Task 12: Get book details based on Author using async-await with Axios
+// Get book details based on Author using async-await with Axios
 public_users.get('/external-books/author/:author', async function (req, res) {
   const author = req.params.author;
   try {
@@ -88,7 +88,7 @@ public_users.get('/external-books/author/:author', async function (req, res) {
   }
 });
 
-// Task 13: Get book details based on Title using async-await with Axios
+// Get book details based on Title using async-await with Axios
 public_users.get('/external-books/title/:title', async function (req, res) {
   const title = req.params.title;
   try {
